@@ -1,0 +1,44 @@
+.card {
+    width: 20vw;
+    margin: 20px;
+    border-radius: 6px;
+    overflow:hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.card:hover {
+    box-shadow:5px 5px 5px #f70202d7;
+    transform: translateY(-3%)
+}
+
+.card .attribute li{
+    margin-right: 25px;
+}
+
+.card .attribute .status div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+.card .attribute .status div.red{
+    background-color: #ff0000;
+}
+.card .attribute .status div.green{
+    background-color: #008000;
+}
+.card .attribute .status div.gray{
+    background-color: #808080;
+}
+.card .attribute .status li{
+    margin-top: -14px;
+}
+
+.card .attribute li {
+    color: black;
+}
