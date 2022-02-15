@@ -5,12 +5,12 @@ const SearchBox = ({ setLocation }) => {
     const [id, setId] = useState("");
     const search = () => {
         axios.get(`https://rickandmortyapi.com/api/location/${id}`)
-        .then((res) => setLocation(res.data));
+            .then((res) => setLocation(res.data));
     };
     return (
         <div className="search-box">
-        <input type="text" onChange={(e) => setId(e.target.value)} value={id} />
-        <button class="btn-submit" onClick={search}>Search</button>
+            <input type="text" onChange={(e) => setId(e.target.value)} value={id} />
+            <button class="btn-submit" onClick={search}>Search</button>
         </div>
     );
 };

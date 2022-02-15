@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LocationInfo = ({type,population,dimension}) => {
+const LocationInfo = ({ type, population, dimension }) => {
     return (
         <ul>
             <li>Type:{type}</li>
